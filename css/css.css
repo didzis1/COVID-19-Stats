@@ -1,0 +1,250 @@
+/* Body & HTML */
+body,
+html {
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 300;
+
+}
+
+/* Elements */
+
+span {
+    display: block;
+}
+
+a {
+    color: lightgrey;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:781px) {
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #header h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:601px) {
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    input[type="text"] {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:761px) {
+
+    .con1,
+    .con2,
+    .con3 {
+        display: inline-block;
+    }
+
+    .con2 {
+        padding: 20px 0 20px 0;
+    }
+
+    .chartContainer {
+        width: 100%;
+    }
+}
+
+
+
+/* Typography */
+h3 {
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 50px;
+    margin: 0;
+}
+
+h4 {
+    color: #000;
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+#header span {
+    display: inline-block;
+    color: rgb(223, 154, 6);
+}
+
+
+#searchOutput h3 {
+    color: #000;
+    padding: 0;
+}
+
+#searchOutput h4 {
+    padding: 0;
+}
+
+/* ID's */
+#header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#currentCases {
+    width: 50%;
+    color: #000;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 35px 0 15px 0;
+}
+
+#graphToggler {
+    width: 35px;
+    cursor: pointer;
+    transition: all 0.75s;
+}
+
+#countrySearch {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+#searchOutput img {
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+#validatorMessage {
+    color: orangered;
+    text-shadow: 1px 1px black;
+}
+
+#currentCases {
+    height: auto;
+}
+
+#searchOutput {
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#searchGraphDiv {
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+#searchGraph {
+    height: 450px;
+}
+
+#footer {
+    color: darkgrey;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+
+}
+
+/* Classes */
+
+.con1,
+.con2,
+.con3 {
+    display: inline-block
+}
+
+.con1 {
+    color: rgb(54, 193, 240);
+}
+
+.con2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(235, 38, 38);
+}
+
+.con3 {
+    color: rgb(46, 187, 46);
+}
+
+.graphTogglerDiv {
+    margin: 25px 0 15px 0;
+}
+
+.graphTogglerDiv span {
+    margin: 0;
+    font-size: 15px;
+    color: darkslategray;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+.arrowDown {
+    transform: rotate(0deg);
+}
+
+.chartContainer {
+    width: 60%;
+    height: 40vh;
+    margin: auto;
+}
+
+.input-text {
+    height: 40px;
+    width: 350px;
+    font-family: inherit;
+    border: 1px solid black;
+    font-size: 18px;
+    border-radius: 0.3rem;
+
+}
+
+.input-text:focus {
+    outline: none;
+    box-shadow: 0.2rem 0.2rem 1rem rgb(153, 153, 153);
+}
+
+.button {
+    height: 40px;
+    margin-left: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    background-color: rgb(189, 189, 189);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(83, 83, 83);
+    color: #fff;
+}
+
+.button:focus {
+    outline: none;
+}

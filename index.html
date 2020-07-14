@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 info</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header" class="header">
+        <h3><span>COVID-19</span> worldwide tracker</h3>
+    </div>
+    <div id="currentCases">
+        <div class="con1">
+            <span class="infectedText">Total Cases</span>
+            <span class="infectedInt"></span>
+        </div>
+        <div class="con2">
+            <span class="deathsText">Total Deaths</span>
+            <span class="deathsInt"></span>
+        </div>
+        <div class="con3">
+            <span class="recoveredText">Recoveries</span>
+            <span class="recoveredInt"></span>
+        </div><br>
+        <div class="graphTogglerDiv">
+            <span id="showGraph">Show Global Graph</span>
+            <img id="graphToggler" src="images/arrow.png" alt="Arrow" class="arrowDown">
+        </div>
+    </div>
+    <div class="chartContainer">
+        <canvas id="worldwideGraph"></canvas>
+    </div>
+
+
+    <div id="countrySearch">
+        <h4>Search the statistics for any country</h4>
+        <form name="countryForm" id="countryForm">
+            <input type="text" id="countries" name="country" class="input-text" placeholder="Search for a country..."
+                required>
+            <input type="submit" value="Search" id="button" class="button">
+        </form>
+        <div id="validatorMessage"></div>
+        <div id="searchOutput"></div>
+        <div id="searchGraphDiv">
+            <canvas id="searchGraph"></canvas>
+        </div>
+        <div id="footer">
+            <span>Created by: Didzis Zvaigzne | API: <a
+                    href="https://corona.lmao.ninja/docs/">corona.lmao.ninja</a></span>
+        </div>
+    </div>
+
+    <script src="js/countryForm.js"></script>
+    <script src="js/globalStats.js"></script>
+</body>
+
+</html>
