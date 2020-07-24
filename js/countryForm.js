@@ -35,6 +35,7 @@ document.getElementById('countryForm').addEventListener("submit", function (even
         // Check if the input country matches a country in the array
         if (country_list.includes(selectedCountry)) {
             // Call function to display country statistics
+            document.getElementById("validatorMessage").innerHTML = "";
             displayCountryStats(selectedCountry);
             countryGraph(selectedCountry);
         } else {
